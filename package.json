@@ -9,13 +9,12 @@
     "colour",
     "css"
   ],
-  "authors": [
-    "Josh Junon <josh@junon.me>",
-    "Heather Arthur <fayearthur@gmail.com>",
-    "Maxime Thirouin"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huynqjmango360/color.git"
+  },
+  "author": "Wy <huy.nguyen@jmango360.com> (https://github.com/huynqjmango360)",
   "license": "MIT",
-  "repository": "Qix-/color",
   "xo": {
     "rules": {
       "no-cond-assign": 0,
