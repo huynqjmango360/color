@@ -27,8 +27,14 @@
   },
   "files": [
     "LICENSE",
-    "index.js"
+    "index.js",
+    "color-convert.js",
+    "color-name.js",
+    "color-string.js",
+    "conversion.js",
+    "route.js"
   ],
+  "source": "index.js",
   "scripts": {
     "pretest": "xo",
     "test": "mocha"
