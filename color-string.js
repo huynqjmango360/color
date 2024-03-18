@@ -52,7 +52,7 @@ cs.get.rgb = function (string) {
 	var hex = /^#([a-f0-9]{6})([a-f0-9]{2})?$/i;
 	var rgba = /^rgba?\(\s*([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/;
 	var per = /^rgba?\(\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*,?\s*([+-]?[\d\.]+)\%\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/;
-	var keyword = /^(\w+)$/;
+	var keyword = /^([\w\s]+)$/;
 
 	var rgb = [0, 0, 0, 1];
 	var match;
@@ -111,7 +111,6 @@ cs.get.rgb = function (string) {
 		if (match[1] === 'transparent') {
 			return [0, 0, 0, 0];
 		}
-
 		if (!hasOwnProperty.call(colorNames, match[1])) {
 			return null;
 		}
